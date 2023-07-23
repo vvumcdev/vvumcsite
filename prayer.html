@@ -36,10 +36,11 @@
      <h2 class="preq">Please submit your prayer request below.</h2>
      </center>
        <form class="prayreq" action="https://formsubmit.co/0fff857daaa8cb44d28fa38b11264490" method="POST">
-
-                <input type="text" id="fname" class="input_field"  placeholder="First Name" required>
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" id="fname" class="input_field" name="name"  placeholder="First Name" required>
                 <input type="text" id="fname" class="input_field"  placeholder="Last Name">
-                <input type="email" id="email1" class="input_field"  placeholder="Enter your@email.com"required>
+                <input type="email" id="email1" class="input_field" name="email"  placeholder="Enter your@email.com"required>
                 <textarea type="text" class="input_field text_field" placeholder="Please type your prayer concerns here..."></textarea>
                 <br>
                 <button class="form_button">Submit Prayer Request</button>
