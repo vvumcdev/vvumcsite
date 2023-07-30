@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
  <meta charset="utf-8">
@@ -58,5 +58,109 @@
    </footer>
  </div>
 
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+ <!-- <link rel="stylesheet" href="reactive.css"> -->
+ <title>Valley View United Methodist Church</title>
+</head>
+<body>
+
+   <header>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="container">
+    <a class="navbar-brand fs-4"  href="#"><img src="images/crossdove2.png" alt="Valley View Church" class="logo"></a>
+    <button class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+        class="sidebar offcanvas offcanvas-top"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header text-white border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Valley View UMC</h5>
+        <button
+        type="button"
+        class="btn-close btn-close-white shadow-none"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="announcements.html">Announcements</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="ministries.html">Ministries</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="prayer.html">Prayer Request</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+   </header>
+   <div class="container-fluid">
+     <div class="row" id="main-pray">
+       <div class="col-lg" id="lmain">
+           <img src="images/pwc.jpg" class="image-fluid" alt="Prayer">
+           <br>
+           <center>
+             <h2>Please pray for the following:</h2>
+           </center>
+       </div>
+       <div class="col-lg" id="rmain">
+         <center>
+         <h2 class="preq">Please submit your prayer request below.</h2>
+         </center>
+           <form class="prayreq" action="https://formsubmit.co/0fff857daaa8cb44d28fa38b11264490" method="POST">
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://vvumc.com/prayer.html">
+                    <input type="text" id="fname" class="input_field" name="name"  placeholder="First Name" required>
+                    <input type="text" id="fname" class="input_field"  name="lastname"placeholder="Last Name">
+                    <input type="email" id="email1" class="input_field" name="email"  placeholder="Enter your@email.com"required>
+                    <textarea type="text" class="input_field text_field" name="prayerreq"placeholder="Please type your prayer concerns here..."></textarea>
+                    <br>
+                    <button class="form_button">Submit Prayer Request</button>
+
+            </form>
+            <br>
+       </div>
+     </div>
+   <footer>
+     <div class="row" id="footer">
+       <div class="col">
+         <center>
+         <p>©2023 by Valley View United Methodist Church.</p>
+       </center>
+       </div>
+     </div>
+   </footer>
+ </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
