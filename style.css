@@ -74,6 +74,19 @@ header{
   width:inherit;
 }
 
+#main-staff {
+  border: 2px solid black;
+  padding: 0px;
+  margin: 0;
+  background-color: grey;
+}
+
+#main-staff img{
+  width:inherit;
+  padding-top: 10px;
+}
+
+
 /* #lmain{
   background-image: url("images/church1.jpg");
   background-repeat: no-repeat;
@@ -87,12 +100,25 @@ header{
 .welcome{
   font-size: 25px;
   color: black;
-    padding-top: 25%;
+    padding-top: 10%;
 }
 
 .cs{
   font-size: 40px;
   color: black;
+}
+
+.address{
+  font-size: 20px;
+  color: black;
+}
+.church{
+  text-align: center;
+  padding-top: 5%;
+}
+
+#staff-header img{
+  height: initial;
 }
 /* NOTE: Nav bar and footer */
 
@@ -155,11 +181,12 @@ li, a, button {
 
 
 .gen_button {
-  padding: 9px 25px;
+  padding: 9px 15px;
   background-color: rgba(0, 136, 169, 1);
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  align-items: center;
 }
 
 .gen_button:hover {
@@ -174,7 +201,7 @@ footer {
 
 .prayreq{
   padding-top: 5%;
-  padding-left: 22.5%;
+
 }
 
 .preq{
@@ -184,7 +211,7 @@ footer {
 .input_field{
   width: 75%;
   height: 30px;
-  margin-top: 10px;
+  margin-top: 15px;
   padding-left: 5px;
   padding-right: 5px;
   border: 1px solid #777;
@@ -204,8 +231,8 @@ footer {
 }
 
 .text_field{
-  height: 100px;
-  padding-top: 5px;
+  height: 150px;
+  padding-top: 10px;
 }
 
 .form_button {
@@ -280,7 +307,18 @@ color: black;
     font-size: 35px;
     color: black;
   }
+  .address{
+    font-size: 15px;
+    color: black;
+  }
   #gather, #grow, #go{
     text-align: center;
+  }
+  button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #edf0f1;
+    text-decoration: none;
   }
 }
