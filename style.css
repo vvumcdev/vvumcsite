@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
 body{
   margin: 0;
   padding: 0;
@@ -75,13 +74,13 @@ header{
 }
 
 #main-staff {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 0px;
   margin: 0;
   background-color: grey;
 }
 
-#main-staff img{
+#staffpic{
   width:inherit;
   padding-top: 10px;
 }
@@ -117,8 +116,9 @@ header{
   padding-top: 5%;
 }
 
-#staff-header img{
-  height: initial;
+#staff-header{
+  width: 95%;
+  height: 75%;
 }
 /* NOTE: Nav bar and footer */
 
@@ -173,6 +173,36 @@ li, a, button {
   text-decoration: none;
 }
 
+.date{
+  width: 20%;
+  text-align: center;
+}
+
+.pray-table{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  background-color: gray;
+}
+
+.announ-info{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.ann-head{
+  margin-top: 5%;
+}
+
+.con-head{
+  margin-top: 1%;
+  margin-bottom: 20px;
+  text-align: center;
+}
 .logo {
   width: auto;
   height: 60px;
@@ -320,5 +350,9 @@ color: black;
     font-size: 15px;
     color: #edf0f1;
     text-decoration: none;
+  }
+  #staff-header{
+    width: 100%;
+    height: auto;
   }
 }
