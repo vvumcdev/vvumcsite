@@ -119,11 +119,11 @@
                     <input type="hidden" name="_subject" value="VVUMC Prayer Request Submission">
                     <input type="text" id="fname" class="input_field" name="name"  placeholder="First Name" required>
                     <input type="text" id="fname" class="input_field"  name="lastname"placeholder="Last Name">
-                    <input type="email" id="email1" class="input_field" name="email"  placeholder="Enter your@email.com"required>
+                    <input type="email" id="email" class="input_field" value="" name="email"  placeholder="Enter your@email.com"required>
                     <textarea type="text" class="input_field text_field" name="prayerreq"placeholder="Please type your prayer concerns here..."></textarea>
                     <br>
 
-                    <button class="form_button justify-content-center gen_button" data-popup-target="#popup">Submit Prayer Request</button>
+                    <button  id="submitbut" class="form_button justify-content-center gen_button" data-popup-target="#popup" disabled>Submit Prayer Request</button>
                   </center>
             </form>
             <br>
@@ -151,5 +151,6 @@
   </div>
   <div id="overlay"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ <script src="button.js"></script>
 </body>
 </html>
