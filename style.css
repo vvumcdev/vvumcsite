@@ -165,13 +165,14 @@ header{
   text-align: left;
 }
 
-li, a, button {
+li, a{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #edf0f1;
   text-decoration: none;
 }
+
 
 .date{
   width: 20%;
@@ -218,6 +219,11 @@ li, a, button {
   outline: none;
   transition: all 0.3s ease 0s;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
 }
 
 .gen_button:hover {
@@ -356,4 +362,72 @@ color: black;
     width: 100%;
     height: auto;
   }
+}
+
+
+
+/* popup css */
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 50;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.popup-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.popup-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+}
+
+.popup-body {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
