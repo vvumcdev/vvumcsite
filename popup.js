@@ -3,7 +3,7 @@ const closepopupButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
 openpopupButtons.forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener('submit', () => {
     const popup = document.querySelector(button.dataset.popupTarget)
     openpopup(popup)
   })
