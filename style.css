@@ -256,6 +256,17 @@ footer {
   outline: none;
 }
 
+.input_fieldc{
+  width: 67%;
+  height: 35px;
+  margin-top: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #777;
+  border-radius: 8px;
+  outline: none;
+}
+
 .contact_form{
   width: auto;
   background-color: white;
