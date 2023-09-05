@@ -75,32 +75,13 @@
            <input type="hidden" name="_captcha" value="false">
            <input type="hidden" name="_next" value="https://vvumc.com/contact.html">
            <input type="hidden" name="_subject" value="VVUMC Contact Form Submission">
-           <div class="mb-3">
-             <div class="form-floating col-sm-8">
-               <input type="text" class="form-control" id="floatingInputGrid" id="name" placeholder="First Name" name="name" required>
-               <label for="floatingInputGrid">First Name:</label>
-             </div>
-           </div>
-           <div class="mb-3">
-             <div class="form-floating col-sm-8">
-               <input type="text" class="form-control" id="floatingInputGrid" id="lastname" placeholder="Last Name" name="lname">
-               <label for="floatingInputGrid">Last Name:</label>
-             </div>
-           </div>
-            <div class="mb-3 mt-3">
-              <div class="form-floating col-sm-8">
-                <input type="email" value="" id="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" name="email" required>
-                <label for="floatingInputGrid">Email address:</label>
-              </div>
-            </div>
-            <div class="mb-3 mt-3">
-              <div class="form-floating col-sm-8">
-                <textarea class="form-control" id="floatingInputGrid" id="comment"
-                 placeholder="Please let us know how we can help." name="text" style="height: 190px"></textarea>
-                <label for="floatingInputGrid">Comments:</label>
-              </div>
-            </div>
-            <button id="submitbut" class="form_button justify-content-center gen_button" data-popup-target="#popup" disabled>Submit</button>
+           <input type="text" id="fname" class="input_field" name="name"  placeholder="First Name" required>
+           <input type="text" id="fname" class="input_field"  name="lastname"placeholder="Last Name">
+           <input type="email" id="email" class="input_field" value="" name="email"  placeholder="Enter your@email.com"required>
+           <textarea type="text" class="input_field text_field" name="contactreq"placeholder="Please let us know how we can help."></textarea>
+           <br>
+
+           <button  id="submitbut" class="form_button justify-content-center gen_button" data-popup-target="#popup" disabled>Submit Prayer Request</button>
           </form>
           </center>
           <br>
