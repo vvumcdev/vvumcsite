@@ -1,0 +1,17 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.hide {
+  opacity: 0;
+}

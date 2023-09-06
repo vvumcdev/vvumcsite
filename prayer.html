@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
- <link rel="stylesheet" href="style.css">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <script defer src="popup.js"></script>
- <!-- <link rel="stylesheet" href="reactive.css"> -->
- <title>Valley View United Methodist Church</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="popup.js"></script>
+  <title>Valley View United Methodist Church</title>
+  <link rel="stylesheet" href="forms.css" />
 </head>
 <body>
 
@@ -112,20 +112,23 @@
          <h2 class="preq">Please submit your prayer request below.</h2>
          </center>
          <center>
-           <form class="prayreq" action="https://formsubmit.co/0fff857daaa8cb44d28fa38b11264490" method="POST">
+           <form name="contact-form" id="form" class="prayreq" action="https://formsubmit.co/0fff857daaa8cb44d28fa38b11264490" method="POST">
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://vvumc.com/prayer.html">
                     <input type="hidden" name="_subject" value="VVUMC Prayer Request Submission">
-                    <input type="text" id="fname" class="input_field" name="name"  placeholder="First Name" required>
-                    <input type="text" id="fname" class="input_field"  name="lastname"placeholder="Last Name">
-                    <input type="email" id="email" class="input_field" value="" name="email"  placeholder="Enter your@email.com"required>
-                    <textarea type="text" class="input_field text_field" name="prayerreq"placeholder="Please type your prayer concerns here..."></textarea>
-                    <br>
-
-                    <button  id="submitbut" class="form_button justify-content-center gen_button" data-popup-target="#popup" disabled>Submit Prayer Request</button>
-                  </center>
+                    <input name="name" class="input_fieldc" placeholder="First Name" />
+                    <div class="error hide">Name is required</div>
+                    <input name="lname" class="input_fieldc" placeholder="Last Name" />
+                    <div class="error hide">Name is required</div>
+                    <input name="email" class="input_fieldc" placeholder="Email Address" />
+                    <div class="error hide">Email is required</div>
+                    <textarea name="message" class="input_fieldc text_field" placeholder="Please pray for..."></textarea>
+                    <div class="error hide">Message is required</div>
+                    <!-- <button type="submit" disabled>SUBMIT FORM</button> -->
+                    <button type="submit" id="submitbut" class="form_button justify-content-center gen_button" data-popup-target="#popup" disabled>Submit Prayer Request</button>
             </form>
+          </center>
             <br>
        </div>
      </div>
